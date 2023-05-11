@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.musy.ui.dashboard.DashboardFragment"
+        android:name="com.example.musy.ui.dashboard.PesquisarFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_pesquisar" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.musy.ui.notifications.NotificationsFragment"
+        android:name="com.example.musy.ui.notifications.BibliotecaFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_biblioteca" />
 </navigation>
