@@ -1,4 +1,4 @@
-package com.example.musy.ui.notifications
+package com.example.musy.ui.biblioteca
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -21,14 +21,14 @@ private var _binding: FragmentBibliotecaBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+    val bibliotecaViewModel =
+            ViewModelProvider(this).get(BibliotecaViewModel::class.java)
 
     _binding = FragmentBibliotecaBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
     val textView: TextView = binding.textBiblioteca
-    notificationsViewModel.text.observe(viewLifecycleOwner) {
+    bibliotecaViewModel.text.observe(viewLifecycleOwner) {
       textView.text = it
     }
     return root

@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.musy.ui.dashboard.PesquisarFragment"
-        android:label="@string/title_dashboard"
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.musy.ui.pesquisar.PesquisarFragment"
+        android:label="@string/title_notifications"
         tools:layout="@layout/fragment_pesquisar" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.musy.ui.notifications.BibliotecaFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.musy.ui.biblioteca.BibliotecaFragment"
+        android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_biblioteca" />
 </navigation>

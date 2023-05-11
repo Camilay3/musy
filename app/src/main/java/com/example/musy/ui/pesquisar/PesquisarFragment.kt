@@ -1,4 +1,4 @@
-package com.example.musy.ui.dashboard
+package com.example.musy.ui.pesquisar
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -21,14 +21,14 @@ private var _binding: FragmentPesquisarBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+    val pesquisarViewModel =
+            ViewModelProvider(this).get(PesquisarViewModel::class.java)
 
     _binding = FragmentPesquisarBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
     val textView: TextView = binding.textPesquisar
-    dashboardViewModel.text.observe(viewLifecycleOwner) {
+    pesquisarViewModel.text.observe(viewLifecycleOwner) {
       textView.text = it
     }
     return root
