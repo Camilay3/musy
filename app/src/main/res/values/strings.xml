@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">musy</string>
+    <string name="title_activity_menu">menu</string>
+    <string name="title_home">início</string>
+    <string name="title_notifications">pesquisar</string>
+    <string name="title_dashboard">biblioteca</string>
 </resources>
