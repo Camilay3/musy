@@ -6,4 +6,6 @@
     <color name="cinza">#FF3E3E3E</color>
     <color name="red">#FFD31717</color>
     <color name="noselect">#FFB3B3B3</color>
+    <color name="vermelho_botao">#c20e0e</color>
+    <color name="vermelho">#ff0008</color>
 </resources>
