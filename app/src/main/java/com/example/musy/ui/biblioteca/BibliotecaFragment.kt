@@ -27,10 +27,10 @@ private var _binding: FragmentBibliotecaBinding? = null
     _binding = FragmentBibliotecaBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-    val textView: TextView = binding.textBiblioteca
-    bibliotecaViewModel.text.observe(viewLifecycleOwner) {
-      textView.text = it
-    }
+//    val textView: TextView = binding.textBiblioteca
+//    bibliotecaViewModel.text.observe(viewLifecycleOwner) {
+//      textView.text = it
+//    }
     return root
   }
 
