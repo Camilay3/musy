@@ -4,4 +4,13 @@
     <string name="title_home">início</string>
     <string name="title_notifications">pesquisar</string>
     <string name="title_dashboard">biblioteca</string>
+    <string name="bom_dia">Bom dia</string>
+    <string name="musica_1">CLEAR MIND</string>
+    <string name="musica_2">URBAN MOOD</string>
+    <string name="musica_3">.</string>
+    <string name="genero_1">Instrumental</string>
+    <string name="genero_2">Hip-Hop</string>
+    <string name="genero_3">Country</string>
+    <string name="musicas">Músicas</string>
+    <string name="musica2"></string>
 </resources>
