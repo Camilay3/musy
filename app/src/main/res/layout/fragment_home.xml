@@ -174,11 +174,11 @@ android:background="@color/allBlack">
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
-            android:gravity="center"
+
             android:layout_marginBottom="13dp">
 
             <ImageButton
@@ -219,16 +219,15 @@ android:background="@color/allBlack">
                 android:layout_height="wrap_content"
                 android:src="@drawable/balls"
                 android:background="android:color/transparent"
-                android:layout_gravity="center"
-                android:layout_marginLeft="140dp"/>
+                android:layout_gravity="center"/>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
-            android:gravity="center"
+
             android:layout_marginBottom="13dp"
             >
 
@@ -243,7 +242,9 @@ android:background="@color/allBlack">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="15dp"
+                >
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -325,11 +326,11 @@ android:background="@color/allBlack">
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginLeft="15dp"
-            android:gravity="center"
+
             android:layout_marginBottom="13dp">
 
             <ImageButton
@@ -343,7 +344,8 @@ android:background="@color/allBlack">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginLeft="15dp">
+                android:layout_marginLeft="15dp"
+                >
 
                 <TextView
                     android:layout_width="wrap_content"
