@@ -5,7 +5,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< Updated upstream
     tools:context=".ui.pesquisar.PesquisarFragment" >
+=======
+    tools:context=".ui.pesquisar.PesquisarFragment"
+    app:layout_constraintTop_toBottomOf="parent"
+    android:padding="40dp"
+    android:orientation="vertical"
+    android:background="@color/fundo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suas Playlists"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="left">
+        </TextView>
+
+        <Button
+            android:id="@+id/novaPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30dp"
+            android:gravity="right">
+        </Button>
+    </LinearLayout>
+>>>>>>> Stashed changes
 
     <TextView
         android:text="BIBLIOTECA"
