@@ -98,6 +98,7 @@
 
     </LinearLayout> <!--final nome e add playlist-->
 
+    <!--HORIZONTAL - linha tempo-->
 
 
     <!--HORIZONTAL - opções do player-->
@@ -125,6 +126,8 @@
             android:layout_marginStart="40dp"
             android:contentDescription="@string/add_playlist"
             tools:ignore="TouchTargetSizeCheck"/>
+
+        
 
         <ImageButton
             android:layout_width="wrap_content"
