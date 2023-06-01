@@ -8,6 +8,8 @@
     <string name="titulo">the gods we can touch</string>
     <string name="nome_musica">A temporary high</string>
     <string name="nome_artistas">Aurora</string>
+    <string name="tempo1">0:58</string>
+    <string name="tempo2">-3:03</string>
 
     <!--CONTENT DESCRIPTION-->
     <string name="add_playlist">Botão de adicionar na playlist / Add to playlist</string>
