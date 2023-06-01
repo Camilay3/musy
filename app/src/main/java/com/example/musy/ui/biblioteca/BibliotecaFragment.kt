@@ -32,23 +32,23 @@ private var _binding: FragmentBibliotecaBinding? = null
     _binding = FragmentBibliotecaBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
-      binding.novaPlaylist.setOnClickListener{
-          val bottomSheetDialog = BottomSheetDialog(
-              context!!, R.style.BottomSheetDialogTheme
-          )
+    binding.novaPlaylist.setOnClickListener{
+      val bottomSheetDialog = BottomSheetDialog(
+          context!!, R.style.BottomSheetDialogTheme
+      )
 
-          val bottomSheetView = LayoutInflater.from(context!!).inflate(
-              R.layout.bottom_add_playlist, binding.root.findViewById<LinearLayout>(R.id.bottomSheet)
-          )
+      val bottomSheetView = LayoutInflater.from(context!!).inflate(
+          R.layout.bottom_add_playlist, binding.root.findViewById<LinearLayout>(R.id.bottomSheet)
+      )
 
-          bottomSheetView.findViewById<View>(R.id.savePButton).setOnClickListener {
-              Toast.makeText(context!!, "Playlist salva!", Toast.LENGTH_SHORT).show()
-              bottomSheetDialog.dismiss()
-          }
-
-          bottomSheetDialog.setContentView(bottomSheetView)
-          bottomSheetDialog.show()
+      bottomSheetView.findViewById<View>(R.id.savePButton).setOnClickListener {
+          Toast.makeText(context!!, "Playlist salva!", Toast.LENGTH_SHORT).show()
+          bottomSheetDialog.dismiss()
       }
+
+      bottomSheetDialog.setContentView(bottomSheetView)
+      bottomSheetDialog.show()
+  }
 
       return root
   }
