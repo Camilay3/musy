@@ -7,4 +7,6 @@
     <color name="red">#FFD31717</color>
     <color name="noselect">#FFB3B3B3</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+    <color name="vermelho_botao">#c20e0e</color>
+    <color name="vermelho">#ff0008</color>
 </resources>
