@@ -99,7 +99,17 @@
     </LinearLayout> <!--final nome e add playlist-->
 
     <!--HORIZONTAL - linha tempo-->
-
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="344dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/custom_seekbar_progress"
+        android:thumb="@drawable/custom_seekbar_thumb"
+        android:layout_marginTop="30dp"/>
 
     <!--HORIZONTAL - opções do player-->
     <LinearLayout
