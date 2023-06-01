@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EVITAR ERRO ACESSIBILIDADE: tools:ignore="TouchTargetSizeCheck" -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:gravity="center">
+
+    <!--VERTICAL // parte de cima-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/descer"
+            android:background="android:color/transparent"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:contentDescription="@string/voltar"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/titulo"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tres_pontinhos"
+            android:background="android:color/transparent"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/tres_pontinhos"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout> <!--final da parte de cima-->
+
+    <!--imagem RA-->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/racista_acustica"
+        />
+
+    <!--HORIZONTAL - nome e add playlist-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--VERTICAL - titulo musica-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="28dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_musica"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_artistas"
+                android:textColor="@color/white"
+                android:textSize="13sp"                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_playlist"
+            android:background="android:color/transparent"
+            android:layout_marginStart="180dp"
+            android:contentDescription="@string/add_playlist"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout> <!--final nome e add playlist-->
+
+    <!--HORIZONTAL - linha tempo-->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="344dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:max="100"
+        android:progress="30"
+        android:progressDrawable="@drawable/custom_seekbar_progress"
+        android:thumb="@drawable/custom_seekbar_thumb"
+        android:layout_marginTop="39dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tempo1"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_marginStart="43dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/tempo2"
+            android:textColor="@color/white"
+            android:layout_marginStart="265dp"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <!--HORIZONTAL - opções do player-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/aleatorio"
+            android:background="android:color/transparent"
+            android:contentDescription="@string/add_playlist"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_skip_previous_24"
+            android:background="android:color/transparent"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/add_playlist"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+        
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/botao_play"
+            android:background="android:color/transparent"
+            android:contentDescription="@string/add_playlist"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_skip_next_24"
+            android:background="android:color/transparent"
+            android:layout_marginEnd="40dp"
+            android:contentDescription="@string/add_playlist"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/repeat"
+            android:background="android:color/transparent"
+
+            android:contentDescription="@string/add_playlist"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+</LinearLayout> <!--VERTICAL - PRINCIPAL-->
