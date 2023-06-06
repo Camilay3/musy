@@ -1,6 +1,7 @@
 package com.example.musy.ui.biblioteca
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -16,10 +17,12 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.musy.R
 import com.example.musy.databinding.FragmentBibliotecaBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.textfield.TextInputEditText
 
 class BibliotecaFragment : Fragment() {
 
-private var _binding: FragmentBibliotecaBinding? = null
+    private var imageUri: Uri? = null
+    private var _binding: FragmentBibliotecaBinding? = null
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -41,6 +44,7 @@ private var _binding: FragmentBibliotecaBinding? = null
 
         binding.novaPlaylist.setOnClickListener{
 
+
           val bottomSheetDialog = BottomSheetDialog(
               context!!, R.style.BottomSheetDialogTheme
           )
@@ -50,6 +54,11 @@ private var _binding: FragmentBibliotecaBinding? = null
           )
 
           bottomSheetView.findViewById<View>(R.id.savePButton).setOnClickListener {
+              if(imageUri != null){
+                  binding.imPlaylist.setImageURI(imageUri)
+              }
+              binding.txPlaylist.text = bottomSheetView.findViewById<TextInputEditText>(R.id.nome_env).text
+
               Toast.makeText(context!!, "Playlist salva!", Toast.LENGTH_SHORT).show()
               bottomSheetDialog.dismiss()
           }
@@ -76,11 +85,11 @@ private var _binding: FragmentBibliotecaBinding? = null
 
         // E se o usuário não enviar foto?
         if (requestCode == IMAGE_REQUEST_CODE && resultCode == AppCompatActivity.RESULT_OK) {
-            val imageUri = data?.data
+            imageUri = data?.data
             if (imageUri != null && imageUri.toString().isNotEmpty()) {
                 // O URI da imagem não é nulo e não está vazio
 
-                // binding.imageView.setImageURI(imageUri)
+                //binding.imPlaylist.setImageURI(imageUri)
                 var p1 = Playlist("Chora agora, ri depois", imageUri.toString(), 2)
                 p1.dados()
 

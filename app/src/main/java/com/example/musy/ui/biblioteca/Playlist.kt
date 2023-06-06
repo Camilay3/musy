@@ -2,8 +2,8 @@ package com.example.musy.ui.biblioteca
 
 import android.util.Log
 
-// Adicionar pré imagem quando o usuário não enviar
-class Playlist(var nome: String = "Sem nome", var image: String, var qnt_musicas: Int, var musicas: Array<String> = emptyArray()) {
+// Adicionar pré, pré texto e pré quantidade quando o usuário não enviar
+class Playlist(var nome: String = "Sem nome", var image: String, var qnt_musicas: Int = 0, var musicas: Array<String> = emptyArray()) {
 
     init {
         this.nome = nome

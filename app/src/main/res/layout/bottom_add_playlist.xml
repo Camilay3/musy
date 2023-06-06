@@ -30,7 +30,7 @@
         android:textColorHint="@color/white"
         app:hintTextColor="@color/white">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nome"
+            android:id="@+id/nome_env"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Nome"
