@@ -24,7 +24,7 @@
         android:background="@drawable/rounded_background"
         app:layout_constraintCircleRadius="5dp"
         tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="765dp"
+        tools:layout_editor_absoluteY="655dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Playlist • TV Girl"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="12dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="115dp"
@@ -45,11 +45,11 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Elzhi"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="12dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="794dp" />
+        tools:layout_editor_absoluteY="685dp" />
 
     <TextView
         android:id="@+id/textView11"
@@ -57,7 +57,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Playlist • Daniel Macedo"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="12dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="115dp"
@@ -69,7 +69,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Playlist • Carlinhos Brown"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="12dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="115dp"
@@ -81,7 +81,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Música • Dani Black"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="12dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="115dp"
@@ -129,7 +129,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Música • Elzhi"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="12dp"
         tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="115dp"
@@ -278,7 +278,7 @@
         app:srcCompat="@drawable/img1"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="770dp" />
+        tools:layout_editor_absoluteY="660dp" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -295,7 +295,7 @@
         android:layout_width="33dp"
         android:layout_height="33dp"
         tools:layout_editor_absoluteX="345dp"
-        tools:layout_editor_absoluteY="780dp"
+        tools:layout_editor_absoluteY="670dp"
         app:srcCompat="@drawable/_52073_circle_fill_play_icon"
         app:tint="@color/white"
         tools:ignore="MissingConstraints" />
@@ -309,14 +309,14 @@
         android:textColor="@color/white"
         android:textSize="15dp"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="775dp"
+        tools:layout_editor_absoluteY="665dp"
         tools:ignore="MissingConstraints,TextSizeCheck" />
 
     <SeekBar
         android:layout_width="375dp"
         android:layout_height="2dp"
         app:layout_editor_absoluteX="20dp"
-        app:layout_editor_absoluteY="823dp"
+        app:layout_editor_absoluteY="715dp"
         android:max="100"
         android:progress="2"
         android:progressDrawable="@drawable/seekbar_progress"
@@ -329,7 +329,7 @@
         android:layout_height="24dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Músicas e poscasts"
-        android:textColor="@color/cinza"
+        android:textColor="@color/cinza_2"
         android:textSize="15dp"
         tools:ignore="DuplicateIds,MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="70dp"
