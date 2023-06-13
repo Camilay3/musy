@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingTop="?attr/actionBarSize">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="402dp"
+        android:layout_height="344dp"
+        android:background="@drawable/retangulo"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="-136dp" />
+
+    <Button
+        android:layout_width="21dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/voltar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <TextView
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/the_gods_we_can_touch"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <TextView
+        android:layout_width="58dp"
+        android:layout_height="16dp"
+        android:text="@string/AURORA"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:layout_width="57dp"
+        android:layout_height="15dp"
+        android:text="@string/playlist"
+        android:textColor="@color/cinza"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        android:src="@drawable/aurora"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <Button
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        android:background="@drawable/baseline_pause_circle_filled_24"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="308dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:layout_width="141dp"
+        android:layout_height="23dp"
+        android:text="@string/a_temporary_high"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/baseline_arrow_circle_down_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="15dp"
+        android:text="@string/AURORA"
+        android:textColor="@color/cinza"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <TextView
+        android:layout_width="106dp"
+        android:layout_height="20dp"
+        android:text="@string/exist_for_love"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/baseline_arrow_circle_down_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="15dp"
+        android:text="@string/AURORA"
+        android:textColor="@color/cinza"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/blood_in_the_wine"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/baseline_arrow_circle_down_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="15dp"
+        android:text="@string/AURORA"
+        android:textColor="@color/cinza"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_dangerous_thing"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/baseline_arrow_circle_down_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:layout_width="62dp"
+        android:layout_height="15dp"
+        android:text="@string/AURORA"
+        android:textColor="@color/cinza"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/everything_matters"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:background="@drawable/baseline_arrow_circle_down_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="580dp" />
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="15dp"
+        android:text="@string/AURORA"
+        android:textColor="@color/cinza"
+        android:textSize="13sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <ImageView
+        android:layout_width="145dp"
+        android:layout_height="178dp"
+        android:background="@drawable/aurora_playlist"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,18 @@
     <string name="nome_artistas">Aurora</string>
     <string name="tempo1">0:58</string>
     <string name="tempo2">-3:03</string>
+    <string name="a_temporary_high">A Temporary High</string>
+    <string name="exist_for_love">Exist For Love</string>
+    <string name="blood_in_the_wine">Blood In The Wine</string>
+    <string name="a_dangerous_thing">A Dangerous Thing</string>
+    <string name="everything_matters">Everything Matters</string>
+    <string name="the_gods_we_can_touch">The Gods We Can Touch</string>
+    <string name="playlist">Playlist</string>
+    <string name="AURORA">AURORA</string>
+
+
+
+
 
     <!--CONTENT DESCRIPTION-->
     <string name="add_playlist">Botão de adicionar na playlist / Add to playlist</string>
