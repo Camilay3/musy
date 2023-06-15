@@ -1,6 +1,7 @@
 package com.example.musy.ui.biblioteca;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,9 +37,14 @@ public class PlaylistAdapter extends ArrayAdapter<Playlist> {
         TextView txtName = convertView.findViewById(R.id.txtName);
         TextView txtDes = convertView.findViewById(R.id.txtDes);
 
-        imageView.setImageResource(getItem(position).getImage());
+
+        if(getItem(position).getImage() != 0){
+            imageView.setImageResource(getItem(position).getImage());
+        } else {
+            imageView.setImageURI(getItem(position).getUri());
+        }
         txtName.setText(getItem(position).getName());
-        txtDes.setText(getItem(position).getDes(0));
+        txtDes.setText(getItem(position).getDes(getItem(position).Qnt_musicas));
 
         return convertView;
     }

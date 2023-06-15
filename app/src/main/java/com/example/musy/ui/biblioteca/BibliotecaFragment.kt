@@ -3,7 +3,6 @@ package com.example.musy.ui.biblioteca
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +17,8 @@ import com.google.android.material.textfield.TextInputEditText
 
 class BibliotecaFragment : Fragment() {
 
+    private lateinit var listView: ListView
+    private lateinit var playlistAdapter: PlaylistAdapter
     private var imageUri: Uri? = null
     private var _binding: FragmentBibliotecaBinding? = null
     // This property is only valid between onCreateView and
@@ -28,47 +29,59 @@ class BibliotecaFragment : Fragment() {
         val IMAGE_REQUEST_CODE = 1_000
     }
 
-  override fun onCreateView(
-    inflater: LayoutInflater,
-    container: ViewGroup?,
-    savedInstanceState: Bundle?
-    ): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+        ): View {
         val bibliotecaViewModel =
                 ViewModelProvider(this).get(BibliotecaViewModel::class.java)
 
         _binding = FragmentBibliotecaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+
+        //LIST VIEW
+        listView = binding.root.findViewById<ListView>(R.id.listView)
+
+        //createdata
+        val arrayList = ArrayList<Playlist>()
+
+        playlistAdapter = PlaylistAdapter(binding.root.context, R.layout.list_row, arrayList)
+
+        listView.adapter = playlistAdapter
+
+
+        //BOTTOM NEW PLAYLIST
         binding.novaPlaylist.setOnClickListener{
-
-
-          val bottomSheetDialog = BottomSheetDialog(
+            val bottomSheetDialog = BottomSheetDialog(
               context!!, R.style.BottomSheetDialogTheme
-          )
+            )
 
-          val bottomSheetView = LayoutInflater.from(context!!).inflate(
+            val bottomSheetView = LayoutInflater.from(context!!).inflate(
               R.layout.bottom_add_playlist, binding.root.findViewById<LinearLayout>(R.id.bottomSheet)
-          )
+            )
 
-          bottomSheetView.findViewById<View>(R.id.savePButton).setOnClickListener {
+            bottomSheetView.findViewById<View>(R.id.savePButton).setOnClickListener {
               if(imageUri != null){
-                  binding.imPlaylist.setImageURI(imageUri)
+                  var nameMusic = bottomSheetView.findViewById<TextInputEditText>(R.id.nome_env).text.toString()
+                  playlistAdapter.add(Playlist(imageUri, nameMusic, 0, ArrayList()))
+                  playlistAdapter.notifyDataSetChanged()
               }
-              binding.txPlaylist.text = bottomSheetView.findViewById<TextInputEditText>(R.id.nome_env).text
 
               Toast.makeText(context!!, "Playlist salva!", Toast.LENGTH_SHORT).show()
               bottomSheetDialog.dismiss()
-          }
+            }
 
-          bottomSheetView.findViewById<View>(R.id.pickImageButton).setOnClickListener {
+            bottomSheetView.findViewById<View>(R.id.pickImageButton).setOnClickListener {
               pickImageFromGallery()
-          }
+            }
 
-          bottomSheetDialog.setContentView(bottomSheetView)
-          bottomSheetDialog.show()
+            bottomSheetDialog.setContentView(bottomSheetView)
+            bottomSheetDialog.show()
         }
 
-      return root
+        return root
     }
 
     private fun pickImageFromGallery() {
@@ -87,8 +100,8 @@ class BibliotecaFragment : Fragment() {
                 // O URI da imagem não é nulo e não está vazio
 
                 //binding.imPlaylist.setImageURI(imageUri)
-                var p1 = Playlist("Chora agora, ri depois", imageUri.toString(), 2)
-                p1.dados()
+                //var p1 = Playlist("Chora agora, ri depois", imageUri.toString(), 2)
+                //p1.dados()
 
             } else {
                 val bottomSheetDialog = BottomSheetDialog(
