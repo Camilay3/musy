@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.biblioteca.bottomAddPlaylist"
+    tools:context=".ui.biblioteca.BibliotecaFragment"
     android:orientation="vertical"
     android:background="@color/red"
     android:id="@+id/bottomSheet"
@@ -30,12 +30,21 @@
         android:textColorHint="@color/white"
         app:hintTextColor="@color/white">
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nome"
+            android:id="@+id/nome_env"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Nome"
             android:textColor="@color/white">
         </com.google.android.material.textfield.TextInputEditText>
+        <Button
+            android:id="@+id/pickImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Escolher imagem"
+            android:backgroundTint="@android:color/transparent"
+            android:outlineSpotShadowColor="@color/white"
+            android:layout_gravity="center"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
